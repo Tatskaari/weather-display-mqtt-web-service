@@ -29,7 +29,7 @@ var weather = {
 
 						weatherInfo.latitude = item.lat;
 						weatherInfo.longitude = item.long;
-						weatherInfo.mist = channel.atmosphere.visibility && channel.atmosphere.visibility < 300 ? true : false;
+						weatherInfo.mist = channel.atmosphere.visibility && channel.atmosphere.visibility < 5 ? true : false;
 						weatherInfo.rain = isRaining(weatherCode);
 						weatherInfo.cloud =  isCloudy(weatherCode);
 						weatherInfo.conditionCode = weatherCode;
