@@ -1,0 +1,27 @@
+{
+  "name": "weather-display-mqtt-web-service",
+  "version": "1.0.0",
+  "description": "The web service for the mqtt weather simulator",
+  "main": "weather_service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tatskaari/weather-display-mqtt-web-service.git"
+  },
+  "dependencies": {
+    "express" : "latest",
+    "mqtt" : "latest",
+    "yql" : "latest",
+    "http" : "latest",
+    "socket.io" : "latest",
+    "suncalc" : "latest"
+  },
+  "author": "Jonathan Poole",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Tatskaari/weather-display-mqtt-web-service/issues"
+  },
+  "homepage": "https://github.com/Tatskaari/weather-display-mqtt-web-service#readme"
+}
