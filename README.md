@@ -2,7 +2,11 @@
 A simple we service to push information to the mqtt server so that the weather display can update
 
 # Instalation
---- make install
+```
+make install
+```
 
 # Usage
---- make run
+```
+make run
+```
