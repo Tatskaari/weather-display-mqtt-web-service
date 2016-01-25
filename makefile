@@ -1,3 +1,3 @@
 .PHONEY: all
 all:
-	node index.js
+	node weather_service.js
