@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Sim</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	        <p>Weather Sim</p>
+	      </a>
+	    </div>
+	  </div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="input-group">
+			  <span class="input-group-addon" id="basic-addon1">Location</span>
+			  <input type="text" class="form-control" placeholder="e.g Canterbury" aria-describedby="basic-addon1" id="location-field">
+			</div>
+		</div>
+		<div class="weather">
+			<h3>Weather Information <span class="location-desc"></span></h3>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="map" style="height: 480px;"></div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="condition"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">Temprature</div>
+						<div class="col-md-6">
+							<div class="progress">
+								<div class="progress-bar temp-bar" role="progressbar" aria-valuenow="-10" aria-valuemin="-10" aria-valuemax="40" style="width: 0%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">Rain</div>
+						<div class="col-md-6 rain"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">Mist</div>
+						<div class="col-md-6 mist"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">Cloud</div>
+						<div class="col-md-6 cloud"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="//code.jquerygeo.com/jquery.geo-1.0.0-b3.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://cdn.socket.io/socket.io-1.4.3.js"></script>
+	<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

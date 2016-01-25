@@ -1,0 +1,11 @@
+.weather {
+	margin-top: 2em;
+}
+
+.weather .progress {
+	margin-bottom: 0;
+}
+
+.weather .row{
+	margin-bottom: 1em;
+}
